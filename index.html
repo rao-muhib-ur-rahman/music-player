@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://kit.fontawesome.com/93d5727676.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main class="containor">
+
+        <div class="btns">
+            <button><i class="fa-solid fa-angle-left"></i></button>
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="flex items-center justify-center rounded-full overflow-hidden h-65 w-65 p-2 ">
+            <img src="./assets/Twilight Love Over the Cityscape.png" alt="" class="rounded-full object-cover h-full w-full border border-gray-600 shadow-lg shadow-black/10">
+        </div>
+
+        <div class="des flex flex-col gap-0.5 items-center justify-center ">
+            <h1 class=" font-bold text-xl text-gray-800">Naal Lay Ja</h1>
+            <h1 class=" font-normal text-sm text-gray-700">ft.Anas Singer</h1>
+        </div>
+        
+        <div class="sound flex flex-col gap-4 w-[90%]">
+        <audio class="w-full" id="song">
+            <source src="./assets/Naal Lay Ja – Anass ft. Ifra Official Lyrical Visualizer Punjabi Song 2026.mp3">
+            
+        </audio>
+        <input type="range" value="0" id="progress" >
+
+        <div class="controls flex w-full justify-between items-center">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div id="playBtn"><i class="fa-solid fa-play fa-2x"></i></div>
+            <div><i class="fa-solid fa-forward "></i></div>
+        </div>
+        </div>
+
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
